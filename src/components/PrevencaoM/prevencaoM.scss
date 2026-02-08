@@ -1,0 +1,88 @@
+@import '../../styles/variaveis.scss';
+
+.secao-masculina {
+  background-color: #F8F9FA; // Fundo azul bem suave
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .titulo-masculino {
+    color: #1976d2; 
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .grade-cards-masculina {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .card-masculino {
+    background: white;
+    
+    width: 250px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .moldura-foto {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 25px;
+      border: 4px solid #bbdefb;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    h3 {
+      color: #333;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+
+      li {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 12px;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+          content: "•";
+          color: #1976d2;
+          position: absolute;
+          left: 0;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

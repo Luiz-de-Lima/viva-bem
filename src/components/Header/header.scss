@@ -1,56 +1,137 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
 
-.cabecalho-principal {
-  padding: 20px 5%;
+.cabecalho-viva-bem {
+  width: 100%;
+  max-width: 1440px;
+  height: 573px;
+  padding: 20px 0;
+  margin: 0 auto;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  background-image: url(../../assets/bannerHeader.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
 
-  .container-navegacao {
+  .conteudo-flex {
+    width: 90%;
+    max-width: 1400px;
+  }
+
+  .menu-capsula {
     display: flex;
+    flex: 1; 
     align-items: center;
     justify-content: space-between;
-    
-    // Configurações da Cápsula
-    width: 100%;
-    max-width: 1200px;
-    padding: 15px 40px;
-    border-radius: 50px; // Cria o efeito arredondado da imagem
-    
-    // Gradiente conforme a imagem
+    padding: 12px 40px;
+    border-radius: 50px;
     background: linear-gradient(to right, #3f51b5, #2196f3, #4db6ac);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 
-  .logotipo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-
-    .icone-coracao {
-      font-size: 1.8rem;
-    }
-
-    h1 {
-      font-size: 1.4rem;
-      font-family: 'Georgia', serif; // Estilo próximo ao da imagem
-      font-style: italic;
-    }
-  }
-
-  .menu-links {
-    display: flex;
-    gap: 30px;
-
-    .link-item {
+    .logotipo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       color: white;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: opacity 0.3s;
 
-      &:hover {
-        opacity: 0.8;
+      h2 {
+        font-style: italic;
+        font-size: 1.4rem;
+      }
+    }
+
+    .navegacao {
+      display: flex;
+      gap: 25px;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .decoracao-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .circulo-medicos {
+      width: 180px;
+      height: 180px;
+      border: 8px solid #3f51b5;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .secao-hero-texto {
+    width: 568px;
+    height: 266px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 5rem;
+
+    .titulo-principal {
+      font-size: 3rem;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #1565c0; // Azul base
+      margin-bottom: 20px;
+      width: 55rem;
+
+      .texto-gradiente {
+        background: linear-gradient(to right, #1565c0, #4db6ac);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .descricao-hero {
+      font-size: 1.25rem;
+      color: #444;
+      margin-bottom: 35px;
+      max-width: 400px;
+    }
+
+    .botoes-container {
+      display: flex;
+      gap: 20px; 
+
+      button {
+        padding: 12px 25px;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+
+      .botao-azul {
+        background-color: #1976d2;
+        color: white;
+        border: none;
+      }
+
+      .botao-vazado {
+        background-color: transparent;
+        color: #1976d2;
+        border: 1px solid #1976d2;
       }
     }
   }

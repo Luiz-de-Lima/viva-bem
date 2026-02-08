@@ -1,0 +1,83 @@
+@import '../../styles/variaveis.scss';
+
+.secao-feminina {
+  background-color: #fff5f7; 
+  padding: 60px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .titulo-feminina {
+    color: #d81b60;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .grade-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .card-feminino {
+    background: white;
+    width: 250px; 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .moldura-foto {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 3px solid #fce4ec;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    h3 {
+      color: #333;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+
+      li {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+          content: "•";
+          color: #d81b60;
+          position: absolute;
+          left: 0;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
