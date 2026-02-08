@@ -10,14 +10,14 @@ function App() {
   
 
   return (
-    <>
+    <main>
     <Header/>
     <ExameRotina/>
     <PrevencaoFeminina/>
     <PrevencaoMasculina/>
     <Alertas/>
     <Footer/>
-    </>
+    </main>
   )
 }
 
