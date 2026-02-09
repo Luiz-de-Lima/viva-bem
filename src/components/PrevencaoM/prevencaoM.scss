@@ -13,6 +13,9 @@
     margin-bottom: 50px;
     font-weight: bold;
     text-align: center;
+    @media (max-width:768px){
+      font-size: 2rem;
+    }
   }
 
   .grade-cards-masculina {
@@ -60,10 +63,14 @@
       font-size: 1.4rem;
       margin-bottom: 20px;
       text-align: center;
+
+     @media (max-width:768px){
+      font-size: 0.938rem;
+    }
     }
 
     ul {
-      list-style: none;
+    
       padding: 0;
       width: 100%;
 
@@ -73,15 +80,9 @@
         line-height: 1.5;
         margin-bottom: 12px;
         padding-left: 20px;
-        position: relative;
+       
 
-        &::before {
-          content: "•";
-          color: #1976d2;
-          position: absolute;
-          left: 0;
-          font-weight: bold;
-        }
+        
       }
     }
   }

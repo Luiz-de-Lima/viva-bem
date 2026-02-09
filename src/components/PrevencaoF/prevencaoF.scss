@@ -1,12 +1,11 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
 
 .secao-feminina {
-  background-color: #fff5f7; 
+  background-color: #fff5f7;
   padding: 60px 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   .titulo-feminina {
     color: #d81b60;
@@ -14,11 +13,14 @@
     margin-bottom: 40px;
     font-weight: bold;
     text-align: center;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   .grade-cards {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     width: 100%;
@@ -27,13 +29,16 @@
 
   .card-feminino {
     background: white;
-    width: 250px; 
+    width: 250px;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 768px) {
+      max-width: 250px;
+    }
 
     .moldura-foto {
       width: 130px;
@@ -55,11 +60,14 @@
       font-size: 1.3rem;
       margin-bottom: 15px;
       text-align: center;
+      @media (max-width: 768px) {
+        font-size: 0.938rem;
+      }
     }
 
     ul {
-      list-style: none;
       padding: 0;
+      margin: 0;
       width: 100%;
 
       li {
@@ -68,15 +76,6 @@
         line-height: 1.4;
         margin-bottom: 10px;
         padding-left: 20px;
-        position: relative;
-
-        &::before {
-          content: "•";
-          color: #d81b60;
-          position: absolute;
-          left: 0;
-          font-weight: bold;
-        }
       }
     }
   }
