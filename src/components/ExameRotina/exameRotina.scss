@@ -1,4 +1,4 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
 
 .secao-exames-rotina {
   display: flex;
@@ -16,16 +16,23 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 20px;
-  
+
       background: linear-gradient(to right, #1e88e5, #4db6ac);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       color: #555;
       font-size: 1.1rem;
       line-height: 1.6;
+      @media (max-width: 768px) {
+        font-size: 0.938rem;
+      }
     }
   }
 
@@ -35,33 +42,40 @@
     gap: 25px;
     width: 100%;
     max-width: 1200px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 
-  .bloco-informativo {
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;
-    background: white;
-    padding: 40px 20px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0,0,0,0.03);
-   width: 282px;
-   height: 202px;
-  
+    .bloco-informativo {
+      flex: 1;
+      min-width: 280px;
+      max-width: 350px;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.03);
+      width: 282px;
+      height: 202px;
+      @media (max-width: 768px) {
+        max-width: 282px;
+        
+      }
 
-    h3 {
-      color: #222;
-      font-size: 1.4rem;
-      margin-bottom: 15px;
-    }
+      h3 {
+        color: #222;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+      }
 
-    p {
-      color: #777;
-      font-size: 1rem;
-      line-height: 1.4;
+      p {
+        color: #777;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #222;
+      }
     }
   }
-}
 }
