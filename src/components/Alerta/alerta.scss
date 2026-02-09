@@ -1,4 +1,4 @@
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
 
 .secao-alertas {
   padding: 80px 5%;
@@ -14,6 +14,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   .container-flex-alertas {
@@ -21,18 +25,22 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    max-width: 950px; 
+    max-width: 950px;
   }
 
   .card-alerta {
     width: 416px;
     height: 141px;
-    
+
     display: flex;
     align-items: center;
     padding: 20px;
     border-radius: 12px;
     gap: 20px;
+
+    @media (max-width: 768px) {
+      max-width: 374px;
+    }
 
     .icone {
       font-size: 2.5rem;
@@ -52,25 +60,32 @@
       }
     }
 
- 
     &.mamas {
-      background-color: #fce4ec; 
-      h3 { color: #d81b60; }
+      background-color: #fce4ec;
+      h3 {
+        color: #d81b60;
+      }
     }
 
     &.testiculos {
-      background-color: #e3f2fd; 
-      h3 { color: #1976d2; }
+      background-color: #e3f2fd;
+      h3 {
+        color: #1976d2;
+      }
     }
 
     &.vacinas {
-      background-color: #e8f5e9; 
-      h3 { color: #388e3c; }
+      background-color: #e8f5e9;
+      h3 {
+        color: #388e3c;
+      }
     }
 
     &.mental {
-      background-color: #fff8e1; 
-      h3 { color: #f57c00; }
+      background-color: #fff8e1;
+      h3 {
+        color: #f57c00;
+      }
     }
   }
 }
